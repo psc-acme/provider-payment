@@ -1,0 +1,37 @@
+{
+    "name": "psc-acme/provider-payment",
+    "description": "Package provider-payment for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ProviderPayment\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "aws/aws-sdk-php": "^3.332",
+        "symfony/cache": "^7.0",
+        "symfony/yaml": "^7.0"
+    },
+    "require-dev": {
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
